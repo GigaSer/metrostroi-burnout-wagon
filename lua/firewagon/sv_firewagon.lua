@@ -10,7 +10,7 @@ local function igniteRequestReceiver(contentLength, ply)
     local randomWagon = poorTrain.WagonList[math.random(0, poorTrain:GetWagonCount())]
     
     print(randomWagon:GetWagonNumber())
-    sound.Play( "phx/explode00.wav", randomWagon:GetPos(), 180, 100, 1)
+    sound.Play("phx/explode00.wav", randomWagon:GetPos(), 180, 100, 1)
 end
 
 net.Receive("FuckMyRandomWagonByFire", igniteRequestReceiver)
