@@ -1,0 +1,1 @@
+print("server firewagon enable")
